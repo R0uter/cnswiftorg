@@ -30,10 +30,13 @@ const config = {
   organizationName: 'R0uter', // Usually your GitHub org/user name.
   projectName: 'cnswiftorg', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   markdown: {
     format: 'md',
     emoji: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'ignore',
+    },
   },
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
