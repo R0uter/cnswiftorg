@@ -40,7 +40,7 @@ print(greet(person: "Brian"))
 
 > 注意
 > 
-> 函数print(\_:separator:terminator:) 的第一个实际参数并没有标签，并且它的其他实际参数是可选的，是因为他们都有默认值。这些函数语法的变化在下边[函数实际参数标签和形式参数名](#spl-8)以及[默认形式参数值](https://www.cnswift.org/functions#spl-11)小节中讨论。
+> 函数print(\_:separator:terminator:) 的第一个实际参数并没有标签，并且它的其他实际参数是可选的，是因为他们都有默认值。这些函数语法的变化在下边[函数实际参数标签和形式参数名](#函数实际参数标签和形式参数名)以及[默认形式参数值](https://www.cnswift.org/functions#spl-11)小节中讨论。
 
 函数greet(person:)的主体从定义一个新的叫做greeting的String常量开始，它被设置成简单问候信息。之后这个问候被return关键字传递出函数。一旦执行到return greeting 这句代码，函数就会结束执行并返回greeting的当前值。
 
@@ -95,6 +95,7 @@ print(greet(person: "Tim", alreadyGreeted: true))
 
 通过在圆括号中传入带有person 标签的String实际参数值和带有alreadyGreeted 标签的Bool实际参数值来调用greet(person:alreadyGreeted:)这个函数，实际参数之间用逗号分隔。注意这个函数与之前展示的函数greet(person:) 是明显不同的。尽管两个函数都叫做greet ，greet(person:alreadyGreeted:) 接收两个实际参数但greet(person:) 函数只接收一个。
 
+<a id="spl-5"></a>
 ### 无返回值的函数
 
 函数定义中没有要求必须有一个返回类型。下面是另一个版本的greet(person:)函数，它将自己的String值打印了出来而不是返回它：
@@ -135,6 +136,7 @@ printWithoutCounting(string: "hello, world")
 > 
 > 返回值可以被忽略，但是如果一个函数需要返回值的时候就必须返回。如果一个函数有定义的返回类型，没有返回值的话就不会继续运行到函数的末尾，尝试这么做的话会得到编译时错误。
 
+<a id="spl-6"></a>
 ### 多返回值的函数
 
 为了让函数返回多个值作为一个复合的返回值，你可以使用元组类型作为返回类型。
@@ -325,6 +327,7 @@ arithmeticMean(3, 8.25, 18.75)
 
 函数可拥有多个可变形式参数。可变形式参数后的第一个形式参数必须有实际参数标签。实际参数标签可以与作为可变形式参数的实际参数去岐义。
 
+<a id="spl-13"></a>
 ### 输入输出形式参数
 
 就像上面描述的，可变形式参数只能在函数的内部做改变。如果你想函数能够修改一个形式参数的值，而且你想这些改变在函数结束之后依然生效，那么就需要将形式参数定义为_输入输出形式参数_。

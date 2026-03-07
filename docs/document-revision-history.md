@@ -98,6 +98,7 @@ sidebar_position: 101
 ### 2020年3月24日
 
 - 为 Swift 5.2 进行了更新；
+<a id="Key-Path"></a>
 - 添加了关于传入 key path 而不是闭包的相关信息到 [Key-Path 表达式](https://www.cnswift.org/expressions#Key-Path) 小节；
 - 添加了带有特殊名称的方法小节，说明了关于使用 let 声明类、结构体和枚举实例的语法糖可用于函数调用的语法；
 - 更新了 [下标选项](https://www.cnswift.org/subscripts#spl-3) 小节，现在下标支持带有默认值的形式参数了；
@@ -110,10 +111,11 @@ sidebar_position: 101
 - 添加了关于函数指定一个返回值遵循协议，而不是提供特定返回类型的信息到[不透明类型](https://www.cnswift.org/opaquetypes)章节；
 - 为[属性包装](https://www.cnswift.org/properties#spl-8)小节添加了关于属性包装的信息；
 - 添加了关于枚举和switch的信息，结构体可在库演进模式被冻结到 [frozen](https://www.cnswift.org/attributes#frozen) 章节；
-- 添加了关于省略函数return 的相关信息到[隐式返回的函数](https://www.cnswift.org/functions#spl-8)和[缩写 getter 声明](https://www.cnswift.org/properties#getter)小节；
+- 添加了关于省略函数return 的相关信息到[隐式返回的函数](/functions#隐式返回的函数)和[缩写 getter 声明](https://www.cnswift.org/properties#getter)小节；
 - 添加了关于对类型使用下标的信息到[类型下标](https://www.cnswift.org/subscripts#spl-4)小节；
 - 更新了枚举情况模式小节，现在枚举情况模式可以匹配可选项；
 - 更新了[结构体的成员初始化器](https://www.cnswift.org/initialization#spl-11)小节，现在成员初始化器支持省略带有默认值的属性了；
+<a id="dynamicMemberLookup-2"></a>
 - 在[dynamicMemberLookup](#dynamicMemberLookup-2)小节添加了关于动态成员可在运行时通过 key path 查找的信息；
 - 在可选编译代码块中添加了macCatalyst 到目标环境列表；
 - 更新了 [Self 类型](https://www.cnswift.org/types#Self)章节，现在Self 可以用来引用当前类、结构体或者枚举声明引入的类型。
@@ -225,7 +227,7 @@ sidebar_position: 101
 - 添加了关于 Object-C 中#selector 语法的信息到 Selector 表达式小节；
 - 更新了关联类型和协议关联类型声明小节中关联类型的讨论以使用associatedtype ；
 - 添加了关于在实例完全初始化前返回nil 的初始化器信息到[可失败的初始化器](/initialization/#spl-21)小节；
-- 添加了关于对比元组的信息到[比较运算符](/basic-operators#spl-9)小节；
+- 添加了关于对比元组的信息到[比较运算符](/basic-operators#比较运算符)小节；
 - 添加了关于把关键字作为外部形式参数名的信息到关键字和标点符号小节；
 - 更新了声明[标志](https://www.cnswift.org/attributes)小节中对于@objc 的讨论以注明枚举和枚举情况能使用这个标志；
 - 更新了运算符小节对包含点的自定义运算符的讨论；
@@ -253,7 +255,7 @@ sidebar_position: 101
 - 为 Swift 2.0 进行了更新。
 - 添加了关于错误处理的信息到[错误处理](/error-handling/)一章，[Do语句](http://www.cnswift.org/error-handling/#_Do-Catch)一节，[Throw语句](http://www.cnswift.org/error-handling/#_Do-Catch)一节，[Defer语句](http://www.cnswift.org/error-handling/#spl-6)一节以及[Try运算符](http://www.cnswift.org/error-handling/#_Do-Catch)一节。
 - 添加了关于 API 可用性检查的信息到[控制流](/control-flow/)一章的[检查 API 可用性](http://www.cnswift.org/control-flow/#API)一节，以及[语句](/statements/)章节的可用性条件小节。
-- 添加了关于guard 语句的信息到[控制流](/control-flow/)一章的[提前退出](/control-flow/#spl-8)小节以及[语句](/statements/)章节的Guard语句小节。
+- 添加了关于guard 语句的信息到[控制流](/control-flow/)一章的[提前退出](/control-flow/#提前退出)小节以及[语句](/statements/)章节的Guard语句小节。
 - 添加了关于协议扩展的信息到[协议](/protocols/)一章的[协议扩展](https://www.cnswift.org/protocols#spl-18)小节。
 - 添加了关于单元测试的访问控制信息到[访问控制](/access-control/)一章的单元测试目标的访问等级小节。
 - 添加了关于新可选模式的信息到[模式](/patterns/)一章的可选模式小节。

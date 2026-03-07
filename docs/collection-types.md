@@ -22,6 +22,7 @@ Swift 中的数组、合集和字典总是明确能储存的值的类型以及�
 > 
 > 在集合不需要改变的情况下创建不可变集合是个不错的选择。这样做可以允许 Swift 编译器优化你创建的集合的性能。
 
+<a id="spl-2"></a>
 ## 数组
 
 数组以有序的方式来储存相同类型的值。相同类型的值可以在数组的不同地方多次出现。
@@ -58,6 +59,7 @@ someInts = []
 // someInts is now an empty array, but is still of type [Int]
 ```
 
+<a id="spl-5"></a>
 ### 使用默认值创建数组
 
 Swift 的Array类型提供了初始化器来创建确定大小且元素都设定为相同默认值的数组。你可以传给初始化器对应类型的默认值（叫做repeating）和新数组元素的数量（叫做count）：
@@ -248,6 +250,7 @@ for (index, value) in shoppingList.enumerated() {
 
 关于for-in循环的更多内容，见[For-in循环](/control-flow/#For-in)。
 
+<a id="spl-24"></a>
 ## 合集[\[1\]](#spl-24)
 
 _合集_将同一类型且不重复的值无序地储存在一个集合当中。当元素的顺序不那么重要的时候你就可以使用合集来代替数组，或者你需要确保元素不会重复的时候。
@@ -537,6 +540,7 @@ var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
 
 由于字面量中所有的键都有相同的类型，同时所有的值也是相同的类型，Swift 可以推断\[String: String\]就是airports字典的正确类型。
 
+<a id="spl-22"></a>
 ### 访问和修改字典
 
 你可以通过字典自身的方法和属性来访问和修改它，或者通过使用下标脚本语法。

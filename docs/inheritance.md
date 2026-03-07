@@ -117,6 +117,7 @@ print("Tandem: \(tandem.description)")
 // Tandem: traveling at 22.0 miles per hour
 ```
 
+<a id="spl-3"></a>
 ### 重写
 
 子类可以提供它自己的实例方法、类型方法、实例属性，类型属性或下标脚本的自定义实现，否则它将会从父类继承。这就所谓的_重写_。

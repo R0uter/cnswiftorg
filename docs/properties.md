@@ -51,6 +51,7 @@ rangeOfFourItems.firstValue = 6
 
 对于类来说则不同，它是_引用类型_。如果你给一个常量赋值引用类型实例，你仍然可以修改那个实例的变量属性。
 
+<a id="spl-3"></a>
 ### 延迟存储属性
 
 _延迟存储属性_的初始值在其第一次使用时才进行计算。你可以通过在其声明前标注lazy 修饰语来表示一个延迟存储属性。
@@ -205,7 +206,7 @@ struct CompactRect {
 }
 ```
 
-如果在[隐式返回的函数](https://www.cnswift.org/functions#spl-8)中描述的那样，在 getter 里省略return 与在函数里省略return 规则相同。
+如果在[隐式返回的函数](/functions#隐式返回的函数)中描述的那样，在 getter 里省略return 与在函数里省略return 规则相同。
 
 ### 只读计算属性
 
@@ -232,6 +233,7 @@ print("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
 
 这个例子定义了一个名为Cuboid 的新结构体，它代表了一个有width ，height 和depth 属性的三维长方形结构。这个结构体还有一个名为volume 的只读计算属性，它计算并返回长方体的当前体积。对于volume 属性来说可被设置并没有意义，因为它会明确width ，height 和depth 中哪个值用在特定的volume 值中，对Cuboid 来说提供一个只读计算属性来让外部用户来发现它的当前计算体积就显得很有用了。
 
+<a id="spl-7"></a>
 ## 属性观察者
 
 _属性观察者_会观察并对属性值的变化做出回应。每当一个属性的值被设置时，属性观察者都会被调用，即使这个值与该属性当前的值相同。
@@ -548,6 +550,7 @@ struct SizedRectangle {
 > 
 > 全局常量和变量永远是延迟计算的，与[延迟存储属性](#spl-3)有着相同的行为。不同于延迟存储属性，全局常量和变量不需要标记lazy 修饰符。
 
+<a id="spl-9"></a>
 ## 类型属性
 
 实例属性是属于特定类型实例的属性。每次你创建这个类型的新实例，它就拥有一堆属性值，与其他实例不同。

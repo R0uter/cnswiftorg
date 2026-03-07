@@ -154,7 +154,7 @@ condition ? expression used if true : expression used if false
 
 如果_条件_计算为true  ，条件运算符计算第一个表达式并返回它的值。否则，计算第二个表达式并返回其值。没有使用的表达式不会进行计算。
 
-使用三元条件运算符的例子，请参阅[三元条件运算符](https://www.cnswift.org/basic-operators#spl-9)。
+使用三元条件运算符的例子，请参阅[三元条件运算符](/basic-operators#三元条件运算符)。
 
 > GRAMMAR OF A CONDITIONAL OPERATOR
 > 

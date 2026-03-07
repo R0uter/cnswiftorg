@@ -16,6 +16,7 @@ Swift 的 String  和 Character  类型提供了一种快速的符合 Unicod
 > 
 > 更多在 Foundation 和 Cocoa 框架中使用String的内容，参见 [与 Cocoa 和 Objective-C 一起使用 Swift](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216) （Swift 4）（官网链接）。
 
+<a id="spl"></a>
 ## 字符串字面量
 
 你可以在你的代码中插入预先写好的String值作为_字符串字面量_。字符串字面量是被双引号（"）包裹的固定顺序文本字符。
@@ -97,6 +98,7 @@ print(quotation == generateQuotation())
 
 在上面的例子中，尽管整个多行字符串字面量被缩进了，字符串中的第一行和最后一行不会有任何空白。中间的行如果有比结束引号有更多的缩进，那么它就会有额外的四个空格的缩进。
 
+<a id="spl-8"></a>
 ### 字符串字面量里的特殊字符
 
 字符串字面量能包含以下特殊字符：
@@ -183,6 +185,7 @@ Swift 的默认拷贝String行为保证了当一个方法或者函数传给你�
 
 另一方面，Swift 编译器优化了字符串使用的资源，实际上拷贝只会在确实需要的时候才进行。这意味着当你把字符串当做值类型来操作的时候总是能够有用很棒的性能。
 
+<a id="spl-5"></a>
 ## 操作字符
 
 你可以通过for-in循环遍历String 中的每一个独立的Character值：
@@ -275,6 +278,7 @@ print(goodStart + end)
 
 在上面的代码中，串联badStart 和end 生成了一个两行字符串，它并不是期望的结果。因为badStart 的最后一行并没有结束于换行符，这一行与end 的第一行合并了。作为对比，goodStart 中的每一行都结束于换行符，所以当它和end 合并，结果就是三行，符合预期。
 
+<a id="spl-7"></a>
 ## 字符串插值
 
 _字符串插值_是一种从混合常量、变量、字面量和表达式的字符串字面量构造新String值的方法。每一个你插入到字符串字面量的元素都要被一对圆括号包裹，然后使用反斜杠前缀：
@@ -493,6 +497,7 @@ let newString = String(beginning)
 
 Swift 提供了三种方法来比较文本值：字符串和字符相等性，前缀相等性以及后缀相等性。
 
+<a id="spl-15"></a>
 ### 字符串和字符相等性
 
 如同[比较运算符](/basic-operators/#spl-10)中所描述的那样，字符串和字符相等使用“等于”运算符 (\==) 和“不等”运算符 (!=)进行检查：
